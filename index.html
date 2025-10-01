@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Homestyle tiffin service delivering fresh meals to your doorstep. My Online Dabba - the taste of home in every bite!">
+    <meta name="description" content="Join FitZone and unlock your potential with state-of-the-art equipment, expert trainers, and a community that motivates you every step of the way.!">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>ApeX Gym</title>
+    <title>ApeXGym</title>
 </head>
 <body>
     <header id="navbar">
         <div class="logo-div">
-            <img src="Graphics/logo-img.jpg" alt="ApeX Gym" id="logo-img">
+            <img src="Graphics/logo-img.jpg" alt="ApeXGym" id="logo-img">
             <div class="brand-text">
-                <h1 id="brand-name"><span>ApeX Gym</span></h2>
+                <h1 id="brand-name"><span>ApeXGym</span></h2>
                 <p id="tagline">Surpass Your Ultimate</p>
             </div>
         </div>
         <ul id="nav-links">
-            <li>Home</li>
-            <li>About</li>
-            <li>Classes</li>
-            <li>Membership</li>
-            <li>Contact</li>
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#why-choose">About</a></li>
+            <li><a href="#classes-section">Classes</a></li>
+            <li><a href="#pricing-section">Membership</a></li>
+            <li><a href="#contact-section">Contact</a></li>
         </ul>
-        <button class="join-btn">Join Now</button>
+        <button class="join-btn" onclick="window.location.href='#pricing-section'">Join Now</button>
+        <button class="hamburger" id="hamburger-menu">
+            ☰
+        </button>
     </header>
     <section id="hero-section">
         <h1>SURPASS YOUR ULTIMATE</h1>
         <h2>Break Your Limits</h2>
         <p>As they say <strong>Challenge Your Limits but Never Limit Your Challenges.</strong> Your potential isn't a destination; it's a journey of constant growth. We provide the expert guidance and empowering community to help you break through your personal bests, one workout at a time. It's more than just fitness—it's about discovering the strength and resilience you never knew you had.</p>
         <div class="hero-btns">
-            <button id="start-btn">Start Your Journey</button>
-            <button id="btn">Learn More</button>
+            <button id="start-btn" onclick="window.location.href='#pricing-section'">Start Your Journey</button>
+            <button id="btn" onclick="window.location.href='#classes-section'">Learn More</button>
         </div>
     </section>
     <section id="why-choose">
-        <h2>Why Choose <span>ApeX Gym</span></h2>
+        <h2>Why Choose <span>ApeXGym</span></h2>
         <p>We're more than just a gym. We're your partner in creating a healthier, stronger, and more confident version of yourself.</p>
         <div class="stats-div">
             <div class="stat-div">
                 <h3>Your Fitness Journey Starts Here</h3>
-                <P>At ApeX Gym, we believe fitness is a lifestyle, not just a workout. Our 15,000 square foot facility features cutting-edge equipment, diverse group classes, and personalized training programs designed to help you reach your goals.</P>
+                <P>At ApeXGym, we believe fitness is a lifestyle, not just a workout. Our 15,000 square foot facility features cutting-edge equipment, diverse group classes, and personalized training programs designed to help you reach your goals.</P>
                 <div class="stat">
                     <div><strong>500+</strong><br>Active Membership</div>
                     <div><strong>15+</strong><br>Expert Trainers</div>
@@ -52,8 +55,8 @@
                 </div>
             </div>
             <div class="stat-video">
-                <video class="section-video" autoplay muted loop poster="Graphics/Hero-video.mp4">
-                    <source src="Graphics/Hero-video.mp4" type="video/mp4">
+                <video class="section-video" autoplay muted loop poster="Graphics/stat-video.mp4">
+                    <source src="Graphics/stat-video.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
@@ -87,7 +90,7 @@
         <p>Join our diverse range of group fitness classes led by certified trainers. Whether you're a beginner or advanced, we have something for everyone.</p>
         <div class="classes-div">
             <div class="classes-left">
-                <img src="Graphics/right-side-img.png" alt="ApeX Gym Classes">
+                <img src="Graphics/right-side-img.png" alt="ApeXGym Classes">
                 <div class="schedule">
                     <h3>Classes Schedule</h3>
                     <ul>
@@ -240,7 +243,7 @@
                     <label for="user-message">Message</label>
                     <textarea id="user-message" rows="5" placeholder="Tell Us about your Fitness Goals or ask any question"></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="submit" class="submit-btn" type="submit">Send Message</button>
                 <div id="form-msg"></div>
             </form>
             <div class="details">
@@ -274,7 +277,7 @@
     <section id="detail-section">
         <div class="detail-container">
             <div class="detail-brand">
-                <h2><span>ApeX Gym</span></h2>
+                <h2><span>ApeXGym</span></h2>
                 <h3>Surpass Your Ultimate</h3>
                 <p>Transform your body and mind with our state-of-the-art facilities, expert trainers, and supportive community.</p>
                 <div class="social-icons">
@@ -287,23 +290,22 @@
             <div class="detail-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="main.html">Home</a></li>
-                    <li><a href="menu.html">About Us</a></li>
-                    <li><a href="order.html">Classes</a></li>
-                    <li><a href="about.html">Membership</a></li>
-                    <li><a href="contact.html">Personal Training</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#hero-section">Home</a></li>
+                    <li><a href="#why-choose">About Us</a></li>
+                    <li><a href="#classes-section">Classes</a></li>
+                    <li><a href="#pricing-section">Membership</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
             </div>
             <div class="detail-links">
                 <h3>Popular Classes</h3>
                 <ul>
-                    <li>HIIT Training</li>
-                    <li>Yoga Flow</li>
-                    <li>Strength Training</li>
-                    <li>Cardio Dance</li>
-                    <li>Pilates</li>
-                    <li>Boxing</li>
+                    <li><a href="">HIIT Training</a></li>
+                    <li><a href="">Yoga Flow</a></li>
+                    <li><a href="">Strength Training</a></li>
+                    <li><a href="">Cardio Dance</a></li>
+                    <li><a href="">Pilates</a></li>
+                    <li><a href="">Boxing</a></li>
                 </ul>
             </div>
             <div class="detail-contact">
@@ -322,5 +324,6 @@
             Copyright &copy; www.ApeXGym.com. All Rights Reserved. Privacy Policy | Terms of Service
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
